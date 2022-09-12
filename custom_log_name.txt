@@ -1,0 +1,756 @@
+2022-09-12T19:14:47.5202929Z Requested labels: ubuntu-latest
+2022-09-12T19:14:47.5202961Z Job defined at: bergel/Roassal3-1-TMP/.github/workflows/runTests.yml@refs/heads/master
+2022-09-12T19:14:47.5202978Z Waiting for a runner to pick up this job...
+2022-09-12T19:14:48.1039164Z Job is waiting for a hosted runner to come online.
+2022-09-12T19:14:51.8216260Z Job is about to start running on the hosted runner: Hosted Agent (hosted)
+2022-09-12T19:14:53.7880470Z Current runner version: '2.296.2'
+2022-09-12T19:14:53.7911741Z ##[group]Operating System
+2022-09-12T19:14:53.7912574Z Ubuntu
+2022-09-12T19:14:53.7912882Z 20.04.5
+2022-09-12T19:14:53.7913108Z LTS
+2022-09-12T19:14:53.7913490Z ##[endgroup]
+2022-09-12T19:14:53.7913830Z ##[group]Runner Image
+2022-09-12T19:14:53.7914141Z Image: ubuntu-20.04
+2022-09-12T19:14:53.7914458Z Version: 20220905.1
+2022-09-12T19:14:53.7914958Z Included Software: https://github.com/actions/runner-images/blob/ubuntu20/20220905.1/images/linux/Ubuntu2004-Readme.md
+2022-09-12T19:14:53.7915563Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20220905.1
+2022-09-12T19:14:53.7915999Z ##[endgroup]
+2022-09-12T19:14:53.7916352Z ##[group]Runner Image Provisioner
+2022-09-12T19:14:53.7916655Z 1.0.0.0-main-20220825-1
+2022-09-12T19:14:53.7916963Z ##[endgroup]
+2022-09-12T19:14:53.7917943Z ##[group]GITHUB_TOKEN Permissions
+2022-09-12T19:14:53.7918542Z Actions: write
+2022-09-12T19:14:53.7918949Z Checks: write
+2022-09-12T19:14:53.7919358Z Contents: write
+2022-09-12T19:14:53.7919692Z Deployments: write
+2022-09-12T19:14:53.7919974Z Discussions: write
+2022-09-12T19:14:53.7920292Z Issues: write
+2022-09-12T19:14:53.7920623Z Metadata: read
+2022-09-12T19:14:53.7920914Z Packages: write
+2022-09-12T19:14:53.7921223Z Pages: write
+2022-09-12T19:14:53.7921540Z PullRequests: write
+2022-09-12T19:14:53.7921844Z RepositoryProjects: write
+2022-09-12T19:14:53.7922223Z SecurityEvents: write
+2022-09-12T19:14:53.7922559Z Statuses: write
+2022-09-12T19:14:53.7922823Z ##[endgroup]
+2022-09-12T19:14:53.7926210Z Secret source: Actions
+2022-09-12T19:14:53.7926682Z Prepare workflow directory
+2022-09-12T19:14:53.8739942Z Prepare all required actions
+2022-09-12T19:14:53.8923258Z Getting action download info
+2022-09-12T19:14:54.0680000Z Download action repository 'styfle/cancel-workflow-action@0.9.0' (SHA:89f242ee29e10c53a841bfe71cc0ce7b2f065abc)
+2022-09-12T19:14:54.4215079Z Download action repository 'actions/checkout@v2' (SHA:7884fcad6b5d53d10323aee724dc68d8b9096a2e)
+2022-09-12T19:14:54.8489878Z ##[group]Run styfle/cancel-workflow-action@0.9.0
+2022-09-12T19:14:54.8490246Z with:
+2022-09-12T19:14:54.8490829Z   access_token: ***
+2022-09-12T19:14:54.8491076Z   ignore_sha: false
+2022-09-12T19:14:54.8491297Z ##[endgroup]
+2022-09-12T19:14:55.1588905Z {
+2022-09-12T19:14:55.1592075Z   eventName: 'push',
+2022-09-12T19:14:55.1593702Z   sha: 'e3ca395526c1f30dc10559585433a144c76daeb0',
+2022-09-12T19:14:55.1594199Z   headSha: 'e3ca395526c1f30dc10559585433a144c76daeb0',
+2022-09-12T19:14:55.1594527Z   branch: 'master',
+2022-09-12T19:14:55.1594795Z   owner: 'bergel',
+2022-09-12T19:14:55.1595110Z   repo: 'Roassal3-1-TMP',
+2022-09-12T19:14:55.1595434Z   GITHUB_RUN_ID: '3039927499'
+2022-09-12T19:14:55.1595815Z }
+2022-09-12T19:14:55.1596062Z Found token: yes
+2022-09-12T19:14:55.3732254Z Found workflow_id: ["34196023"]
+2022-09-12T19:14:55.7928161Z Found 6 runs total.
+2022-09-12T19:14:55.7971578Z Found 0 runs to cancel.
+2022-09-12T19:14:55.7972329Z 
+2022-09-12T19:14:55.7973021Z Cancel Complete.
+2022-09-12T19:14:55.8153408Z ##[group]Run actions/checkout@v2
+2022-09-12T19:14:55.8153747Z with:
+2022-09-12T19:14:55.8153941Z   repository: bergel/Roassal3-1-TMP
+2022-09-12T19:14:55.8154318Z   token: ***
+2022-09-12T19:14:55.8154479Z   ssh-strict: true
+2022-09-12T19:14:55.8154674Z   persist-credentials: true
+2022-09-12T19:14:55.8154874Z   clean: true
+2022-09-12T19:14:55.8155204Z   fetch-depth: 1
+2022-09-12T19:14:55.8155398Z   lfs: false
+2022-09-12T19:14:55.8155611Z   submodules: false
+2022-09-12T19:14:55.8155826Z   set-safe-directory: true
+2022-09-12T19:14:55.8156065Z ##[endgroup]
+2022-09-12T19:14:55.9766345Z Syncing repository: bergel/Roassal3-1-TMP
+2022-09-12T19:14:55.9768153Z ##[group]Getting Git version info
+2022-09-12T19:14:55.9768803Z Working directory is '/home/runner/work/Roassal3-1-TMP/Roassal3-1-TMP'
+2022-09-12T19:14:55.9769416Z [command]/usr/bin/git version
+2022-09-12T19:14:55.9956256Z git version 2.37.3
+2022-09-12T19:14:55.9981563Z ##[endgroup]
+2022-09-12T19:14:56.0001526Z Temporarily overriding HOME='/home/runner/work/_temp/3c5e032f-1757-4aa7-a104-1b7375d815c6' before making global git config changes
+2022-09-12T19:14:56.0002635Z Adding repository directory to the temporary git global config as a safe directory
+2022-09-12T19:14:56.0007118Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Roassal3-1-TMP/Roassal3-1-TMP
+2022-09-12T19:14:56.0056529Z Deleting the contents of '/home/runner/work/Roassal3-1-TMP/Roassal3-1-TMP'
+2022-09-12T19:14:56.0061680Z ##[group]Initializing the repository
+2022-09-12T19:14:56.0065816Z [command]/usr/bin/git init /home/runner/work/Roassal3-1-TMP/Roassal3-1-TMP
+2022-09-12T19:14:56.0261850Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-09-12T19:14:56.0262966Z hint: is subject to change. To configure the initial branch name to use in all
+2022-09-12T19:14:56.0263481Z hint: of your new repositories, which will suppress this warning, call:
+2022-09-12T19:14:56.0263811Z hint: 
+2022-09-12T19:14:56.0264312Z hint: 	git config --global init.defaultBranch <name>
+2022-09-12T19:14:56.0264622Z hint: 
+2022-09-12T19:14:56.0265067Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-09-12T19:14:56.0265607Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-09-12T19:14:56.0265951Z hint: 
+2022-09-12T19:14:56.0266254Z hint: 	git branch -m <name>
+2022-09-12T19:14:56.0278993Z Initialized empty Git repository in /home/runner/work/Roassal3-1-TMP/Roassal3-1-TMP/.git/
+2022-09-12T19:14:56.0289171Z [command]/usr/bin/git remote add origin https://github.com/bergel/Roassal3-1-TMP
+2022-09-12T19:14:56.0367609Z ##[endgroup]
+2022-09-12T19:14:56.0368245Z ##[group]Disabling automatic garbage collection
+2022-09-12T19:14:56.0371549Z [command]/usr/bin/git config --local gc.auto 0
+2022-09-12T19:14:56.0402439Z ##[endgroup]
+2022-09-12T19:14:56.0403361Z ##[group]Setting up auth
+2022-09-12T19:14:56.0412576Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-09-12T19:14:56.0445251Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-09-12T19:14:56.1020833Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-09-12T19:14:56.1058042Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-09-12T19:14:56.1305721Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-09-12T19:14:56.1345508Z ##[endgroup]
+2022-09-12T19:14:56.1346443Z ##[group]Fetching the repository
+2022-09-12T19:14:56.1356414Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +e3ca395526c1f30dc10559585433a144c76daeb0:refs/remotes/origin/master
+2022-09-12T19:14:56.3471614Z remote: Enumerating objects: 867, done.        
+2022-09-12T19:14:56.3477620Z remote: Counting objects:   0% (1/867)        
+2022-09-12T19:14:56.3485421Z remote: Counting objects:   1% (9/867)        
+2022-09-12T19:14:56.3492017Z remote: Counting objects:   2% (18/867)        
+2022-09-12T19:14:56.3498727Z remote: Counting objects:   3% (27/867)        
+2022-09-12T19:14:56.3503738Z remote: Counting objects:   4% (35/867)        
+2022-09-12T19:14:56.3507520Z remote: Counting objects:   5% (44/867)        
+2022-09-12T19:14:56.3511007Z remote: Counting objects:   6% (53/867)        
+2022-09-12T19:14:56.3516000Z remote: Counting objects:   7% (61/867)        
+2022-09-12T19:14:56.3519914Z remote: Counting objects:   8% (70/867)        
+2022-09-12T19:14:56.3523705Z remote: Counting objects:   9% (79/867)        
+2022-09-12T19:14:56.3527417Z remote: Counting objects:  10% (87/867)        
+2022-09-12T19:14:56.3531105Z remote: Counting objects:  11% (96/867)        
+2022-09-12T19:14:56.3536712Z remote: Counting objects:  12% (105/867)        
+2022-09-12T19:14:56.3540946Z remote: Counting objects:  13% (113/867)        
+2022-09-12T19:14:56.3545254Z remote: Counting objects:  14% (122/867)        
+2022-09-12T19:14:56.3549155Z remote: Counting objects:  15% (131/867)        
+2022-09-12T19:14:56.3553274Z remote: Counting objects:  16% (139/867)        
+2022-09-12T19:14:56.3558481Z remote: Counting objects:  17% (148/867)        
+2022-09-12T19:14:56.3562742Z remote: Counting objects:  18% (157/867)        
+2022-09-12T19:14:56.3566944Z remote: Counting objects:  19% (165/867)        
+2022-09-12T19:14:56.3571107Z remote: Counting objects:  20% (174/867)        
+2022-09-12T19:14:56.3576257Z remote: Counting objects:  21% (183/867)        
+2022-09-12T19:14:56.3581490Z remote: Counting objects:  22% (191/867)        
+2022-09-12T19:14:56.3585729Z remote: Counting objects:  23% (200/867)        
+2022-09-12T19:14:56.3590484Z remote: Counting objects:  24% (209/867)        
+2022-09-12T19:14:56.3595188Z remote: Counting objects:  25% (217/867)        
+2022-09-12T19:14:56.3599459Z remote: Counting objects:  26% (226/867)        
+2022-09-12T19:14:56.3603572Z remote: Counting objects:  27% (235/867)        
+2022-09-12T19:14:56.3607356Z remote: Counting objects:  28% (243/867)        
+2022-09-12T19:14:56.3611136Z remote: Counting objects:  29% (252/867)        
+2022-09-12T19:14:56.3614535Z remote: Counting objects:  30% (261/867)        
+2022-09-12T19:14:56.3618324Z remote: Counting objects:  31% (269/867)        
+2022-09-12T19:14:56.3621771Z remote: Counting objects:  32% (278/867)        
+2022-09-12T19:14:56.3625602Z remote: Counting objects:  33% (287/867)        
+2022-09-12T19:14:56.3628854Z remote: Counting objects:  34% (295/867)        
+2022-09-12T19:14:56.3632871Z remote: Counting objects:  35% (304/867)        
+2022-09-12T19:14:56.3635772Z remote: Counting objects:  36% (313/867)        
+2022-09-12T19:14:56.3639463Z remote: Counting objects:  37% (321/867)        
+2022-09-12T19:14:56.3642828Z remote: Counting objects:  38% (330/867)        
+2022-09-12T19:14:56.3644956Z remote: Counting objects:  39% (339/867)        
+2022-09-12T19:14:56.3646626Z remote: Counting objects:  40% (347/867)        
+2022-09-12T19:14:56.3650592Z remote: Counting objects:  41% (356/867)        
+2022-09-12T19:14:56.3652126Z remote: Counting objects:  42% (365/867)        
+2022-09-12T19:14:56.3657050Z remote: Counting objects:  43% (373/867)        
+2022-09-12T19:14:56.3659408Z remote: Counting objects:  44% (382/867)        
+2022-09-12T19:14:56.3661535Z remote: Counting objects:  45% (391/867)        
+2022-09-12T19:14:56.3663569Z remote: Counting objects:  46% (399/867)        
+2022-09-12T19:14:56.3665628Z remote: Counting objects:  47% (408/867)        
+2022-09-12T19:14:56.3668118Z remote: Counting objects:  48% (417/867)        
+2022-09-12T19:14:56.3670419Z remote: Counting objects:  49% (425/867)        
+2022-09-12T19:14:56.3672530Z remote: Counting objects:  50% (434/867)        
+2022-09-12T19:14:56.3674827Z remote: Counting objects:  51% (443/867)        
+2022-09-12T19:14:56.3680502Z remote: Counting objects:  52% (451/867)        
+2022-09-12T19:14:56.3680824Z remote: Counting objects:  53% (460/867)        
+2022-09-12T19:14:56.3689354Z remote: Counting objects:  54% (469/867)        
+2022-09-12T19:14:56.3689698Z remote: Counting objects:  55% (477/867)        
+2022-09-12T19:14:56.3690103Z remote: Counting objects:  56% (486/867)        
+2022-09-12T19:14:56.3690422Z remote: Counting objects:  57% (495/867)        
+2022-09-12T19:14:56.3690719Z remote: Counting objects:  58% (503/867)        
+2022-09-12T19:14:56.3691028Z remote: Counting objects:  59% (512/867)        
+2022-09-12T19:14:56.3691341Z remote: Counting objects:  60% (521/867)        
+2022-09-12T19:14:56.3691634Z remote: Counting objects:  61% (529/867)        
+2022-09-12T19:14:56.3691938Z remote: Counting objects:  62% (538/867)        
+2022-09-12T19:14:56.3692245Z remote: Counting objects:  63% (547/867)        
+2022-09-12T19:14:56.3692575Z remote: Counting objects:  64% (555/867)        
+2022-09-12T19:14:56.3693053Z remote: Counting objects:  65% (564/867)        
+2022-09-12T19:14:56.3693361Z remote: Counting objects:  66% (573/867)        
+2022-09-12T19:14:56.3693665Z remote: Counting objects:  67% (581/867)        
+2022-09-12T19:14:56.3693962Z remote: Counting objects:  68% (590/867)        
+2022-09-12T19:14:56.3694274Z remote: Counting objects:  69% (599/867)        
+2022-09-12T19:14:56.3694902Z remote: Counting objects:  70% (607/867)        
+2022-09-12T19:14:56.3695216Z remote: Counting objects:  71% (616/867)        
+2022-09-12T19:14:56.3695507Z remote: Counting objects:  72% (625/867)        
+2022-09-12T19:14:56.3695813Z remote: Counting objects:  73% (633/867)        
+2022-09-12T19:14:56.3696122Z remote: Counting objects:  74% (642/867)        
+2022-09-12T19:14:56.3696414Z remote: Counting objects:  75% (651/867)        
+2022-09-12T19:14:56.3696716Z remote: Counting objects:  76% (659/867)        
+2022-09-12T19:14:56.3697023Z remote: Counting objects:  77% (668/867)        
+2022-09-12T19:14:56.3697318Z remote: Counting objects:  78% (677/867)        
+2022-09-12T19:14:56.3697620Z remote: Counting objects:  79% (685/867)        
+2022-09-12T19:14:56.3697925Z remote: Counting objects:  80% (694/867)        
+2022-09-12T19:14:56.3698215Z remote: Counting objects:  81% (703/867)        
+2022-09-12T19:14:56.3698520Z remote: Counting objects:  82% (711/867)        
+2022-09-12T19:14:56.3698824Z remote: Counting objects:  83% (720/867)        
+2022-09-12T19:14:56.3699126Z remote: Counting objects:  84% (729/867)        
+2022-09-12T19:14:56.3699417Z remote: Counting objects:  85% (737/867)        
+2022-09-12T19:14:56.3699721Z remote: Counting objects:  86% (746/867)        
+2022-09-12T19:14:56.3700023Z remote: Counting objects:  87% (755/867)        
+2022-09-12T19:14:56.3700314Z remote: Counting objects:  88% (763/867)        
+2022-09-12T19:14:56.3700616Z remote: Counting objects:  89% (772/867)        
+2022-09-12T19:14:56.3700921Z remote: Counting objects:  90% (781/867)        
+2022-09-12T19:14:56.3701218Z remote: Counting objects:  91% (789/867)        
+2022-09-12T19:14:56.3701525Z remote: Counting objects:  92% (798/867)        
+2022-09-12T19:14:56.3702095Z remote: Counting objects:  93% (807/867)        
+2022-09-12T19:14:56.3702490Z remote: Counting objects:  94% (815/867)        
+2022-09-12T19:14:56.3702777Z remote: Counting objects:  95% (824/867)        
+2022-09-12T19:14:56.3703058Z remote: Counting objects:  96% (833/867)        
+2022-09-12T19:14:56.3703339Z remote: Counting objects:  97% (841/867)        
+2022-09-12T19:14:56.3703609Z remote: Counting objects:  98% (850/867)        
+2022-09-12T19:14:56.3703891Z remote: Counting objects:  99% (859/867)        
+2022-09-12T19:14:56.3704176Z remote: Counting objects: 100% (867/867)        
+2022-09-12T19:14:56.3704464Z remote: Counting objects: 100% (867/867), done.        
+2022-09-12T19:14:56.3704786Z remote: Compressing objects:   0% (1/766)        
+2022-09-12T19:14:56.3705098Z remote: Compressing objects:   1% (8/766)        
+2022-09-12T19:14:56.3705491Z remote: Compressing objects:   2% (16/766)        
+2022-09-12T19:14:56.3705811Z remote: Compressing objects:   3% (23/766)        
+2022-09-12T19:14:56.3706118Z remote: Compressing objects:   4% (31/766)        
+2022-09-12T19:14:56.3706422Z remote: Compressing objects:   5% (39/766)        
+2022-09-12T19:14:56.3706709Z remote: Compressing objects:   6% (46/766)        
+2022-09-12T19:14:56.3707018Z remote: Compressing objects:   7% (54/766)        
+2022-09-12T19:14:56.3707324Z remote: Compressing objects:   8% (62/766)        
+2022-09-12T19:14:56.3707609Z remote: Compressing objects:   9% (69/766)        
+2022-09-12T19:14:56.3707906Z remote: Compressing objects:  10% (77/766)        
+2022-09-12T19:14:56.3716863Z remote: Compressing objects:  11% (85/766)        
+2022-09-12T19:14:56.3717296Z remote: Compressing objects:  12% (92/766)        
+2022-09-12T19:14:56.3717724Z remote: Compressing objects:  13% (100/766)        
+2022-09-12T19:14:56.3718076Z remote: Compressing objects:  14% (108/766)        
+2022-09-12T19:14:56.3718604Z remote: Compressing objects:  15% (115/766)        
+2022-09-12T19:14:56.3718935Z remote: Compressing objects:  16% (123/766)        
+2022-09-12T19:14:56.3719266Z remote: Compressing objects:  17% (131/766)        
+2022-09-12T19:14:56.3719613Z remote: Compressing objects:  18% (138/766)        
+2022-09-12T19:14:56.3719925Z remote: Compressing objects:  19% (146/766)        
+2022-09-12T19:14:56.3720251Z remote: Compressing objects:  20% (154/766)        
+2022-09-12T19:14:56.3724040Z remote: Compressing objects:  21% (161/766)        
+2022-09-12T19:14:56.3734109Z remote: Compressing objects:  22% (169/766)        
+2022-09-12T19:14:56.3734573Z remote: Compressing objects:  23% (177/766)        
+2022-09-12T19:14:56.3740330Z remote: Compressing objects:  24% (184/766)        
+2022-09-12T19:14:56.3740718Z remote: Compressing objects:  25% (192/766)        
+2022-09-12T19:14:56.3741034Z remote: Compressing objects:  26% (200/766)        
+2022-09-12T19:14:56.3749770Z remote: Compressing objects:  27% (207/766)        
+2022-09-12T19:14:56.3753803Z remote: Compressing objects:  28% (215/766)        
+2022-09-12T19:14:56.3757517Z remote: Compressing objects:  29% (223/766)        
+2022-09-12T19:14:56.3873676Z remote: Compressing objects:  30% (230/766)        
+2022-09-12T19:14:56.3928342Z remote: Compressing objects:  31% (238/766)        
+2022-09-12T19:14:56.3935362Z remote: Compressing objects:  32% (246/766)        
+2022-09-12T19:14:56.3950181Z remote: Compressing objects:  33% (253/766)        
+2022-09-12T19:14:56.3959958Z remote: Compressing objects:  34% (261/766)        
+2022-09-12T19:14:56.3969322Z remote: Compressing objects:  35% (269/766)        
+2022-09-12T19:14:56.3987964Z remote: Compressing objects:  36% (276/766)        
+2022-09-12T19:14:56.3991232Z remote: Compressing objects:  37% (284/766)        
+2022-09-12T19:14:56.3996871Z remote: Compressing objects:  38% (292/766)        
+2022-09-12T19:14:56.4008914Z remote: Compressing objects:  39% (299/766)        
+2022-09-12T19:14:56.4018015Z remote: Compressing objects:  40% (307/766)        
+2022-09-12T19:14:56.4032251Z remote: Compressing objects:  41% (315/766)        
+2022-09-12T19:14:56.4054980Z remote: Compressing objects:  42% (322/766)        
+2022-09-12T19:14:56.4066352Z remote: Compressing objects:  43% (330/766)        
+2022-09-12T19:14:56.4066677Z remote: Compressing objects:  44% (338/766)        
+2022-09-12T19:14:56.4078833Z remote: Compressing objects:  45% (345/766)        
+2022-09-12T19:14:56.4118725Z remote: Compressing objects:  46% (353/766)        
+2022-09-12T19:14:56.4119244Z remote: Compressing objects:  47% (361/766)        
+2022-09-12T19:14:56.4137759Z remote: Compressing objects:  48% (368/766)        
+2022-09-12T19:14:56.4143761Z remote: Compressing objects:  49% (376/766)        
+2022-09-12T19:14:56.4151194Z remote: Compressing objects:  50% (383/766)        
+2022-09-12T19:14:56.4159959Z remote: Compressing objects:  51% (391/766)        
+2022-09-12T19:14:56.4160548Z remote: Compressing objects:  52% (399/766)        
+2022-09-12T19:14:56.4167850Z remote: Compressing objects:  53% (406/766)        
+2022-09-12T19:14:56.4171885Z remote: Compressing objects:  54% (414/766)        
+2022-09-12T19:14:56.4181589Z remote: Compressing objects:  55% (422/766)        
+2022-09-12T19:14:56.4188306Z remote: Compressing objects:  56% (429/766)        
+2022-09-12T19:14:56.4193967Z remote: Compressing objects:  57% (437/766)        
+2022-09-12T19:14:56.4194335Z remote: Compressing objects:  58% (445/766)        
+2022-09-12T19:14:56.4210641Z remote: Compressing objects:  59% (452/766)        
+2022-09-12T19:14:56.4218654Z remote: Compressing objects:  60% (460/766)        
+2022-09-12T19:14:56.4219078Z remote: Compressing objects:  61% (468/766)        
+2022-09-12T19:14:56.4256788Z remote: Compressing objects:  62% (475/766)        
+2022-09-12T19:14:56.4271087Z remote: Compressing objects:  63% (483/766)        
+2022-09-12T19:14:56.4274464Z remote: Compressing objects:  64% (491/766)        
+2022-09-12T19:14:56.4289577Z remote: Compressing objects:  65% (498/766)        
+2022-09-12T19:14:56.4298449Z remote: Compressing objects:  66% (506/766)        
+2022-09-12T19:14:56.4315830Z remote: Compressing objects:  67% (514/766)        
+2022-09-12T19:14:56.4316162Z remote: Compressing objects:  68% (521/766)        
+2022-09-12T19:14:56.4329227Z remote: Compressing objects:  69% (529/766)        
+2022-09-12T19:14:56.4329594Z remote: Compressing objects:  70% (537/766)        
+2022-09-12T19:14:56.4338785Z remote: Compressing objects:  71% (544/766)        
+2022-09-12T19:14:56.4345633Z remote: Compressing objects:  72% (552/766)        
+2022-09-12T19:14:56.4353170Z remote: Compressing objects:  73% (560/766)        
+2022-09-12T19:14:56.4367390Z remote: Compressing objects:  74% (567/766)        
+2022-09-12T19:14:56.4367759Z remote: Compressing objects:  75% (575/766)        
+2022-09-12T19:14:56.4384706Z remote: Compressing objects:  76% (583/766)        
+2022-09-12T19:14:56.4385166Z remote: Compressing objects:  77% (590/766)        
+2022-09-12T19:14:56.4385543Z remote: Compressing objects:  78% (598/766)        
+2022-09-12T19:14:56.4385861Z remote: Compressing objects:  79% (606/766)        
+2022-09-12T19:14:56.4386195Z remote: Compressing objects:  80% (613/766)        
+2022-09-12T19:14:56.4386526Z remote: Compressing objects:  81% (621/766)        
+2022-09-12T19:14:56.4386838Z remote: Compressing objects:  82% (629/766)        
+2022-09-12T19:14:56.4387168Z remote: Compressing objects:  83% (636/766)        
+2022-09-12T19:14:56.4387491Z remote: Compressing objects:  84% (644/766)        
+2022-09-12T19:14:56.4387820Z remote: Compressing objects:  85% (652/766)        
+2022-09-12T19:14:56.4388129Z remote: Compressing objects:  86% (659/766)        
+2022-09-12T19:14:56.4388453Z remote: Compressing objects:  87% (667/766)        
+2022-09-12T19:14:56.4388778Z remote: Compressing objects:  88% (675/766)        
+2022-09-12T19:14:56.4422795Z remote: Compressing objects:  89% (682/766)        
+2022-09-12T19:14:56.4463987Z remote: Compressing objects:  90% (690/766)        
+2022-09-12T19:14:56.4464425Z remote: Compressing objects:  91% (698/766)        
+2022-09-12T19:14:56.4464766Z remote: Compressing objects:  92% (705/766)        
+2022-09-12T19:14:56.4465106Z remote: Compressing objects:  93% (713/766)        
+2022-09-12T19:14:56.4465418Z remote: Compressing objects:  94% (721/766)        
+2022-09-12T19:14:56.4465745Z remote: Compressing objects:  95% (728/766)        
+2022-09-12T19:14:56.4470197Z remote: Compressing objects:  96% (736/766)        
+2022-09-12T19:14:56.4472404Z remote: Compressing objects:  97% (744/766)        
+2022-09-12T19:14:56.4473138Z remote: Compressing objects:  98% (751/766)        
+2022-09-12T19:14:56.4473902Z remote: Compressing objects:  99% (759/766)        
+2022-09-12T19:14:56.4474467Z remote: Compressing objects: 100% (766/766)        
+2022-09-12T19:14:56.4475125Z remote: Compressing objects: 100% (766/766), done.        
+2022-09-12T19:14:56.4536909Z Receiving objects:   0% (1/867)
+2022-09-12T19:14:56.4559867Z Receiving objects:   1% (9/867)
+2022-09-12T19:14:56.4656012Z Receiving objects:   2% (18/867)
+2022-09-12T19:14:56.4702040Z Receiving objects:   3% (27/867)
+2022-09-12T19:14:56.4705927Z Receiving objects:   4% (35/867)
+2022-09-12T19:14:56.4709502Z Receiving objects:   5% (44/867)
+2022-09-12T19:14:56.4712103Z Receiving objects:   6% (53/867)
+2022-09-12T19:14:56.4716151Z Receiving objects:   7% (61/867)
+2022-09-12T19:14:56.4720414Z Receiving objects:   8% (70/867)
+2022-09-12T19:14:56.4724217Z Receiving objects:   9% (79/867)
+2022-09-12T19:14:56.4728561Z Receiving objects:  10% (87/867)
+2022-09-12T19:14:56.4732941Z Receiving objects:  11% (96/867)
+2022-09-12T19:14:56.4740199Z Receiving objects:  12% (105/867)
+2022-09-12T19:14:56.4743616Z Receiving objects:  13% (113/867)
+2022-09-12T19:14:56.4749348Z Receiving objects:  14% (122/867)
+2022-09-12T19:14:56.4750206Z Receiving objects:  15% (131/867)
+2022-09-12T19:14:56.4755851Z Receiving objects:  16% (139/867)
+2022-09-12T19:14:56.4760959Z Receiving objects:  17% (148/867)
+2022-09-12T19:14:56.4763702Z Receiving objects:  18% (157/867)
+2022-09-12T19:14:56.4767748Z Receiving objects:  19% (165/867)
+2022-09-12T19:14:56.4769941Z Receiving objects:  20% (174/867)
+2022-09-12T19:14:56.4779181Z Receiving objects:  21% (183/867)
+2022-09-12T19:14:56.4779809Z Receiving objects:  22% (191/867)
+2022-09-12T19:14:56.4784741Z Receiving objects:  23% (200/867)
+2022-09-12T19:14:56.4785219Z Receiving objects:  24% (209/867)
+2022-09-12T19:14:56.4786011Z Receiving objects:  25% (217/867)
+2022-09-12T19:14:56.4786695Z Receiving objects:  26% (226/867)
+2022-09-12T19:14:56.4802794Z Receiving objects:  27% (235/867)
+2022-09-12T19:14:56.4814129Z Receiving objects:  28% (243/867)
+2022-09-12T19:14:56.4819815Z Receiving objects:  29% (252/867)
+2022-09-12T19:14:56.4829057Z Receiving objects:  30% (261/867)
+2022-09-12T19:14:56.4840434Z Receiving objects:  31% (269/867)
+2022-09-12T19:14:56.4847104Z Receiving objects:  32% (278/867)
+2022-09-12T19:14:56.4849331Z Receiving objects:  33% (287/867)
+2022-09-12T19:14:56.4851206Z Receiving objects:  34% (295/867)
+2022-09-12T19:14:56.4855033Z Receiving objects:  35% (304/867)
+2022-09-12T19:14:56.4859058Z Receiving objects:  36% (313/867)
+2022-09-12T19:14:56.4862770Z Receiving objects:  37% (321/867)
+2022-09-12T19:14:56.4865966Z Receiving objects:  38% (330/867)
+2022-09-12T19:14:56.4869033Z Receiving objects:  39% (339/867)
+2022-09-12T19:14:56.4871359Z Receiving objects:  40% (347/867)
+2022-09-12T19:14:56.4876043Z Receiving objects:  41% (356/867)
+2022-09-12T19:14:56.4879956Z Receiving objects:  42% (365/867)
+2022-09-12T19:14:56.4883587Z Receiving objects:  43% (373/867)
+2022-09-12T19:14:56.4888468Z Receiving objects:  44% (382/867)
+2022-09-12T19:14:56.4891449Z Receiving objects:  45% (391/867)
+2022-09-12T19:14:56.4897089Z Receiving objects:  46% (399/867)
+2022-09-12T19:14:56.4901984Z Receiving objects:  47% (408/867)
+2022-09-12T19:14:56.4906397Z Receiving objects:  48% (417/867)
+2022-09-12T19:14:56.4910457Z Receiving objects:  49% (425/867)
+2022-09-12T19:14:56.4913276Z Receiving objects:  50% (434/867)
+2022-09-12T19:14:56.4915958Z Receiving objects:  51% (443/867)
+2022-09-12T19:14:56.4919733Z Receiving objects:  52% (451/867)
+2022-09-12T19:14:56.4924381Z Receiving objects:  53% (460/867)
+2022-09-12T19:14:56.4928410Z Receiving objects:  54% (469/867)
+2022-09-12T19:14:56.4932889Z Receiving objects:  55% (477/867)
+2022-09-12T19:14:56.4936724Z Receiving objects:  56% (486/867)
+2022-09-12T19:14:56.4942398Z Receiving objects:  57% (495/867)
+2022-09-12T19:14:56.4946303Z Receiving objects:  58% (503/867)
+2022-09-12T19:14:56.4950136Z Receiving objects:  59% (512/867)
+2022-09-12T19:14:56.4954031Z Receiving objects:  60% (521/867)
+2022-09-12T19:14:56.4959834Z Receiving objects:  61% (529/867)
+2022-09-12T19:14:56.4965753Z Receiving objects:  62% (538/867)
+2022-09-12T19:14:56.4966618Z Receiving objects:  63% (547/867)
+2022-09-12T19:14:56.4971194Z Receiving objects:  64% (555/867)
+2022-09-12T19:14:56.4973633Z Receiving objects:  65% (564/867)
+2022-09-12T19:14:56.4996891Z Receiving objects:  66% (573/867)
+2022-09-12T19:14:56.4997318Z Receiving objects:  67% (581/867)
+2022-09-12T19:14:56.4998071Z Receiving objects:  68% (590/867)
+2022-09-12T19:14:56.4998711Z Receiving objects:  69% (599/867)
+2022-09-12T19:14:56.5001316Z Receiving objects:  70% (607/867)
+2022-09-12T19:14:56.5002308Z Receiving objects:  71% (616/867)
+2022-09-12T19:14:56.5007546Z Receiving objects:  72% (625/867)
+2022-09-12T19:14:56.5010597Z Receiving objects:  73% (633/867)
+2022-09-12T19:14:56.5014868Z Receiving objects:  74% (642/867)
+2022-09-12T19:14:56.5018460Z Receiving objects:  75% (651/867)
+2022-09-12T19:14:56.5022686Z Receiving objects:  76% (659/867)
+2022-09-12T19:14:56.5024645Z Receiving objects:  77% (668/867)
+2022-09-12T19:14:56.5028478Z Receiving objects:  78% (677/867)
+2022-09-12T19:14:56.5059832Z Receiving objects:  79% (685/867)
+2022-09-12T19:14:56.5060563Z Receiving objects:  80% (694/867)
+2022-09-12T19:14:56.5061299Z Receiving objects:  81% (703/867)
+2022-09-12T19:14:56.5062094Z Receiving objects:  82% (711/867)
+2022-09-12T19:14:56.5062890Z Receiving objects:  83% (720/867)
+2022-09-12T19:14:56.5063577Z Receiving objects:  84% (729/867)
+2022-09-12T19:14:56.5064258Z Receiving objects:  85% (737/867)
+2022-09-12T19:14:56.5064981Z Receiving objects:  86% (746/867)
+2022-09-12T19:14:56.5065633Z Receiving objects:  87% (755/867)
+2022-09-12T19:14:56.5067213Z Receiving objects:  88% (763/867)
+2022-09-12T19:14:56.5068139Z Receiving objects:  89% (772/867)
+2022-09-12T19:14:56.5069240Z remote: Total 867 (delta 64), reused 442 (delta 40), pack-reused 0        
+2022-09-12T19:14:56.5075051Z Receiving objects:  90% (781/867)
+2022-09-12T19:14:56.5078958Z Receiving objects:  91% (789/867)
+2022-09-12T19:14:56.5081667Z Receiving objects:  92% (798/867)
+2022-09-12T19:14:56.5082545Z Receiving objects:  93% (807/867)
+2022-09-12T19:14:56.5086623Z Receiving objects:  94% (815/867)
+2022-09-12T19:14:56.5088741Z Receiving objects:  95% (824/867)
+2022-09-12T19:14:56.5090792Z Receiving objects:  96% (833/867)
+2022-09-12T19:14:56.5098878Z Receiving objects:  97% (841/867)
+2022-09-12T19:14:56.5105374Z Receiving objects:  98% (850/867)
+2022-09-12T19:14:56.5108624Z Receiving objects:  99% (859/867)
+2022-09-12T19:14:56.5109062Z Receiving objects: 100% (867/867)
+2022-09-12T19:14:56.5109802Z Receiving objects: 100% (867/867), 1006.29 KiB | 17.06 MiB/s, done.
+2022-09-12T19:14:56.5114822Z Resolving deltas:   0% (0/64)
+2022-09-12T19:14:56.5115569Z Resolving deltas:   1% (1/64)
+2022-09-12T19:14:56.5116215Z Resolving deltas:   3% (2/64)
+2022-09-12T19:14:56.5116853Z Resolving deltas:   4% (3/64)
+2022-09-12T19:14:56.5117471Z Resolving deltas:   6% (4/64)
+2022-09-12T19:14:56.5118060Z Resolving deltas:   7% (5/64)
+2022-09-12T19:14:56.5118406Z Resolving deltas:   9% (6/64)
+2022-09-12T19:14:56.5118629Z Resolving deltas:  10% (7/64)
+2022-09-12T19:14:56.5118955Z Resolving deltas:  12% (8/64)
+2022-09-12T19:14:56.5125454Z Resolving deltas:  14% (9/64)
+2022-09-12T19:14:56.5126126Z Resolving deltas:  15% (10/64)
+2022-09-12T19:14:56.5126787Z Resolving deltas:  17% (11/64)
+2022-09-12T19:14:56.5127422Z Resolving deltas:  18% (12/64)
+2022-09-12T19:14:56.5128316Z Resolving deltas:  20% (13/64)
+2022-09-12T19:14:56.5128866Z Resolving deltas:  21% (14/64)
+2022-09-12T19:14:56.5129122Z Resolving deltas:  23% (15/64)
+2022-09-12T19:14:56.5129358Z Resolving deltas:  25% (16/64)
+2022-09-12T19:14:56.5129615Z Resolving deltas:  26% (17/64)
+2022-09-12T19:14:56.5129973Z Resolving deltas:  28% (18/64)
+2022-09-12T19:14:56.5130845Z Resolving deltas:  29% (19/64)
+2022-09-12T19:14:56.5131547Z Resolving deltas:  31% (20/64)
+2022-09-12T19:14:56.5132224Z Resolving deltas:  32% (21/64)
+2022-09-12T19:14:56.5133054Z Resolving deltas:  34% (22/64)
+2022-09-12T19:14:56.5133309Z Resolving deltas:  35% (23/64)
+2022-09-12T19:14:56.5133575Z Resolving deltas:  37% (24/64)
+2022-09-12T19:14:56.5133926Z Resolving deltas:  39% (25/64)
+2022-09-12T19:14:56.5134659Z Resolving deltas:  40% (26/64)
+2022-09-12T19:14:56.5134911Z Resolving deltas:  42% (27/64)
+2022-09-12T19:14:56.5135176Z Resolving deltas:  43% (28/64)
+2022-09-12T19:14:56.5135694Z Resolving deltas:  45% (29/64)
+2022-09-12T19:14:56.5136031Z Resolving deltas:  46% (30/64)
+2022-09-12T19:14:56.5136303Z Resolving deltas:  48% (31/64)
+2022-09-12T19:14:56.5136570Z Resolving deltas:  50% (32/64)
+2022-09-12T19:14:56.5136897Z Resolving deltas:  51% (33/64)
+2022-09-12T19:14:56.5137439Z Resolving deltas:  53% (34/64)
+2022-09-12T19:14:56.5138976Z Resolving deltas:  54% (35/64)
+2022-09-12T19:14:56.5139542Z Resolving deltas:  56% (36/64)
+2022-09-12T19:14:56.5141670Z Resolving deltas:  57% (37/64)
+2022-09-12T19:14:56.5142206Z Resolving deltas:  59% (38/64)
+2022-09-12T19:14:56.5144001Z Resolving deltas:  60% (39/64)
+2022-09-12T19:14:56.5146662Z Resolving deltas:  62% (40/64)
+2022-09-12T19:14:56.5149948Z Resolving deltas:  64% (41/64)
+2022-09-12T19:14:56.5150483Z Resolving deltas:  65% (42/64)
+2022-09-12T19:14:56.5152426Z Resolving deltas:  67% (43/64)
+2022-09-12T19:14:56.5152962Z Resolving deltas:  68% (44/64)
+2022-09-12T19:14:56.5157407Z Resolving deltas:  70% (45/64)
+2022-09-12T19:14:56.5158191Z Resolving deltas:  71% (46/64)
+2022-09-12T19:14:56.5159360Z Resolving deltas:  73% (47/64)
+2022-09-12T19:14:56.5159832Z Resolving deltas:  75% (48/64)
+2022-09-12T19:14:56.5160834Z Resolving deltas:  76% (49/64)
+2022-09-12T19:14:56.5161684Z Resolving deltas:  78% (50/64)
+2022-09-12T19:14:56.5162385Z Resolving deltas:  79% (51/64)
+2022-09-12T19:14:56.5163182Z Resolving deltas:  81% (52/64)
+2022-09-12T19:14:56.5163954Z Resolving deltas:  82% (53/64)
+2022-09-12T19:14:56.5164587Z Resolving deltas:  84% (54/64)
+2022-09-12T19:14:56.5165283Z Resolving deltas:  85% (55/64)
+2022-09-12T19:14:56.5165902Z Resolving deltas:  87% (56/64)
+2022-09-12T19:14:56.5166867Z Resolving deltas:  89% (57/64)
+2022-09-12T19:14:56.5168021Z Resolving deltas:  90% (58/64)
+2022-09-12T19:14:56.5169189Z Resolving deltas:  92% (59/64)
+2022-09-12T19:14:56.5169845Z Resolving deltas:  93% (60/64)
+2022-09-12T19:14:56.5170946Z Resolving deltas:  95% (61/64)
+2022-09-12T19:14:56.5172227Z Resolving deltas:  96% (62/64)
+2022-09-12T19:14:56.5173220Z Resolving deltas:  98% (63/64)
+2022-09-12T19:14:56.5178419Z Resolving deltas: 100% (64/64)
+2022-09-12T19:14:56.5178808Z Resolving deltas: 100% (64/64), done.
+2022-09-12T19:14:56.5296950Z From https://github.com/bergel/Roassal3-1-TMP
+2022-09-12T19:14:56.5297664Z  * [new ref]         e3ca395526c1f30dc10559585433a144c76daeb0 -> origin/master
+2022-09-12T19:14:56.5318189Z ##[endgroup]
+2022-09-12T19:14:56.5318858Z ##[group]Determining the checkout info
+2022-09-12T19:14:56.5320088Z ##[endgroup]
+2022-09-12T19:14:56.5320609Z ##[group]Checking out the ref
+2022-09-12T19:14:56.5324244Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2022-09-12T19:14:56.5740531Z Reset branch 'master'
+2022-09-12T19:14:56.5744772Z branch 'master' set up to track 'origin/master'.
+2022-09-12T19:14:56.5747133Z ##[endgroup]
+2022-09-12T19:14:56.5796918Z [command]/usr/bin/git log -1 --format='%H'
+2022-09-12T19:14:56.5827927Z 'e3ca395526c1f30dc10559585433a144c76daeb0'
+2022-09-12T19:14:56.6015717Z ##[group]Run bash ./scripts/runTest.sh
+2022-09-12T19:14:56.6016112Z [36;1mbash ./scripts/runTest.sh[0m
+2022-09-12T19:14:56.6083674Z shell: /usr/bin/bash -e {0}
+2022-09-12T19:14:56.6083934Z ##[endgroup]
+2022-09-12T19:14:56.6602674Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2022-09-12T19:14:56.6608917Z                                  Dload  Upload   Total   Spent    Left  Speed
+2022-09-12T19:14:56.6609609Z 
+2022-09-12T19:14:56.9294653Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2022-09-12T19:14:56.9316526Z 100  3074  100  3074    0     0  11427      0 --:--:-- --:--:-- --:--:-- 11427
+2022-09-12T19:14:57.2157566Z Downloading the latest 110 Image:
+2022-09-12T19:14:57.2158798Z     http://files.pharo.org/get-files/110/pharoImage-x86_64.zip
+2022-09-12T19:14:59.4004784Z Pharo.image
+2022-09-12T19:14:59.6828239Z Downloading the latest pharoVM:
+2022-09-12T19:14:59.6829717Z 	http://files.pharo.org/get-files/110/pharo-vm-Linux-x86_64-stable.zip
+2022-09-12T19:15:01.3482098Z pharo-vm/pharo
+2022-09-12T19:15:01.3497017Z Creating starter scripts pharo and pharo-ui
+2022-09-12T19:15:01.5719436Z NewUndeclaredWarning: UndefinedObject>>DoIt (unitTests is Undeclared)
+2022-09-12T19:15:01.5720468Z NewUndeclaredWarning: UndefinedObject>>DoIt (path is Undeclared)
+2022-09-12T19:15:01.5722007Z NewUndeclaredWarning: UndefinedObject>>DoIt (path is Undeclared)
+2022-09-12T19:15:01.5723093Z NewUndeclaredWarning: UndefinedObject>>DoIt (path is Undeclared)
+2022-09-12T19:15:01.5723885Z NewUndeclaredWarning: UndefinedObject>>DoIt (path is Undeclared)
+2022-09-12T19:15:01.5724655Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5726502Z NewUndeclaredWarning: UndefinedObject>>DoIt (numberOfPassed is Undeclared)
+2022-09-12T19:15:01.5727229Z NewUndeclaredWarning: UndefinedObject>>DoIt (unitTests is Undeclared)
+2022-09-12T19:15:01.5728075Z NewUndeclaredWarning: UndefinedObject>>DoIt (res is Undeclared)
+2022-09-12T19:15:01.5729044Z NewUndeclaredWarning: UndefinedObject>>DoIt (res is Undeclared)
+2022-09-12T19:15:01.5729947Z NewUndeclaredWarning: UndefinedObject>>DoIt (res is Undeclared)
+2022-09-12T19:15:01.5730646Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5731560Z NewUndeclaredWarning: UndefinedObject>>DoIt (res is Undeclared)
+2022-09-12T19:15:01.5732808Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5733433Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5734155Z NewUndeclaredWarning: UndefinedObject>>DoIt (numberOfPassed is Undeclared)
+2022-09-12T19:15:01.5734834Z NewUndeclaredWarning: UndefinedObject>>DoIt (res is Undeclared)
+2022-09-12T19:15:01.5735473Z NewUndeclaredWarning: UndefinedObject>>DoIt (numberOfPassed is Undeclared)
+2022-09-12T19:15:01.5736049Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5736677Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5737263Z NewUndeclaredWarning: UndefinedObject>>DoIt (unitTests is Undeclared)
+2022-09-12T19:15:01.5737929Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5738574Z NewUndeclaredWarning: UndefinedObject>>DoIt (numberOfPassed is Undeclared)
+2022-09-12T19:15:01.5739204Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5739910Z NewUndeclaredWarning: UndefinedObject>>DoIt (unitTests is Undeclared)
+2022-09-12T19:15:01.5740442Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.5741050Z NewUndeclaredWarning: UndefinedObject>>DoIt (stream is Undeclared)
+2022-09-12T19:15:01.6808987Z I got an error while cloning: There was an authentication error while trying to execute the operation: . 
+2022-09-12T19:15:01.6810854Z This happens usually because you didn't provide a valid set of credentials. 
+2022-09-12T19:15:01.6812387Z You may fix this problem in different ways: 
+2022-09-12T19:15:01.6813117Z 
+2022-09-12T19:15:01.6815198Z 1. adding your keys to ssh-agent, executing ssh-add ~/.ssh/id_rsa in your command line.
+2022-09-12T19:15:01.6816421Z 2. adding your keys in settings (open settings browser search for "Use custom SSH keys" and
+2022-09-12T19:15:01.6817247Z add your public and private keys).
+2022-09-12T19:15:09.9533018Z 3. using HTTPS instead SSH (Just use an url in the form HTTPS://etc.git). I will try to clone the HTTPS variant.
+2022-09-12T19:15:09.9536407Z MetacelloNotification: Fetched -> BaselineOfRoassal3-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:09.9626806Z MetacelloNotification: Loading -> BaselineOfRoassal3-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:10.0380330Z MetacelloNotification: Loaded -> BaselineOfRoassal3-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:10.0403012Z MetacelloNotification: Loading baseline of BaselineOfRoassal3...
+2022-09-12T19:15:10.1305847Z I got an error while cloning: There was an authentication error while trying to execute the operation: . 
+2022-09-12T19:15:10.1307364Z This happens usually because you didn't provide a valid set of credentials. 
+2022-09-12T19:15:10.1308218Z You may fix this problem in different ways: 
+2022-09-12T19:15:10.1308638Z 
+2022-09-12T19:15:10.1309562Z 1. adding your keys to ssh-agent, executing ssh-add ~/.ssh/id_rsa in your command line.
+2022-09-12T19:15:10.1310498Z 2. adding your keys in settings (open settings browser search for "Use custom SSH keys" and
+2022-09-12T19:15:10.1311301Z add your public and private keys).
+2022-09-12T19:15:11.2135452Z 3. using HTTPS instead SSH (Just use an url in the form HTTPS://etc.git). I will try to clone the HTTPS variant.
+2022-09-12T19:15:11.2138671Z MetacelloNotification: Fetched -> BaselineOfGeometry-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- https://github.com/pharo-contributions/Geometry.git[master]
+2022-09-12T19:15:11.2165960Z MetacelloNotification: Loading -> BaselineOfGeometry-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- https://github.com/pharo-contributions/Geometry.git[master]
+2022-09-12T19:15:11.2723460Z MetacelloNotification: Loaded -> BaselineOfGeometry-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- https://github.com/pharo-contributions/Geometry.git[master]
+2022-09-12T19:15:11.6233195Z I got an error while cloning: There was an authentication error while trying to execute the operation: . 
+2022-09-12T19:15:11.6235525Z This happens usually because you didn't provide a valid set of credentials. 
+2022-09-12T19:15:11.6236818Z You may fix this problem in different ways: 
+2022-09-12T19:15:11.6237670Z 
+2022-09-12T19:15:11.6238761Z 1. adding your keys to ssh-agent, executing ssh-add ~/.ssh/id_rsa in your command line.
+2022-09-12T19:15:11.6245068Z 2. adding your keys in settings (open settings browser search for "Use custom SSH keys" and
+2022-09-12T19:15:11.6260075Z add your public and private keys).
+2022-09-12T19:15:12.0422101Z 3. using HTTPS instead SSH (Just use an url in the form HTTPS://etc.git). I will try to clone the HTTPS variant.
+2022-09-12T19:15:12.0424733Z MetacelloNotification: Fetched -> Athens-SVG-PathConverter-CompatibleUserName.1648286018 --- https://github.com/pharo-contributions/Athens-SVG.git[master] --- https://github.com/pharo-contributions/Athens-SVG.git[master]
+2022-09-12T19:15:12.0429124Z MetacelloNotification: Project: Geometry baseline
+2022-09-12T19:15:12.0483004Z MetacelloNotification: Fetched -> Geometry-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- https://github.com/pharo-contributions/Geometry.git[master]
+2022-09-12T19:15:12.0502250Z MetacelloNotification: Fetched -> Geometry-Tests-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- https://github.com/pharo-contributions/Geometry.git[master]
+2022-09-12T19:15:12.0507296Z MetacelloNotification: Project: NumericScales baseline
+2022-09-12T19:15:12.1271631Z I got an error while cloning: There was an authentication error while trying to execute the operation: . 
+2022-09-12T19:15:12.1273333Z This happens usually because you didn't provide a valid set of credentials. 
+2022-09-12T19:15:12.1275517Z You may fix this problem in different ways: 
+2022-09-12T19:15:12.1275900Z 
+2022-09-12T19:15:12.1276456Z 1. adding your keys to ssh-agent, executing ssh-add ~/.ssh/id_rsa in your command line.
+2022-09-12T19:15:12.1277478Z 2. adding your keys in settings (open settings browser search for "Use custom SSH keys" and
+2022-09-12T19:15:12.1278448Z add your public and private keys).
+2022-09-12T19:15:12.5462952Z 3. using HTTPS instead SSH (Just use an url in the form HTTPS://etc.git). I will try to clone the HTTPS variant.
+2022-09-12T19:15:12.5465014Z MetacelloNotification: Fetched -> Roassal3-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5487829Z MetacelloNotification: Fetched -> Roassal3-Event-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5509696Z MetacelloNotification: Fetched -> Roassal3-Builders-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5533968Z MetacelloNotification: Fetched -> Roassal3-Shapes-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5566231Z MetacelloNotification: Fetched -> Roassal3-Animation-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5585505Z MetacelloNotification: Fetched -> Roassal3-Interaction-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5603102Z MetacelloNotification: Fetched -> Roassal3-Layouts-Util-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5622094Z MetacelloNotification: Fetched -> Roassal3-Layouts-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5638541Z MetacelloNotification: Fetched -> Roassal3-Colors-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5660875Z MetacelloNotification: Fetched -> Roassal3-Legend-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5679505Z MetacelloNotification: Fetched -> Roassal3-UML-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5700582Z MetacelloNotification: Fetched -> Roassal3-Sunburst-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5721046Z MetacelloNotification: Fetched -> Roassal3-FlameGraph-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5740134Z MetacelloNotification: Fetched -> Roassal3-Pie-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5761030Z MetacelloNotification: Fetched -> Roassal3-Inspector-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5803157Z MetacelloNotification: Fetched -> Roassal3-Chart-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5823223Z MetacelloNotification: Fetched -> Roassal3-DSM-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5842706Z MetacelloNotification: Fetched -> Roassal3-Menu-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5862914Z MetacelloNotification: Fetched -> Roassal3-Spec-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:12.5884256Z MetacelloNotification: Fetched -> Roassal3-Spec-Morphic-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.0040538Z MetacelloNotification: Fetched -> Roassal3-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.0173077Z MetacelloNotification: Fetched -> Roassal3-Legend-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.0803462Z MetacelloNotification: Fetched -> Roassal3-Chart-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.1354531Z MetacelloNotification: Fetched -> Roassal3-Pie-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.1482488Z MetacelloNotification: Fetched -> Roassal3-Sunburst-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.1569065Z MetacelloNotification: Fetched -> Roassal3-FlameGraph-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.1677024Z MetacelloNotification: Fetched -> Roassal3-UML-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2026379Z MetacelloNotification: Fetched -> Roassal3-Spec-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2062103Z MetacelloNotification: Fetched -> Roassal3-Global-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2095088Z MetacelloNotification: Fetched -> Roassal3-Animation-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2104535Z MetacelloNotification: Fetched -> Roassal3-Shapes-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2124884Z MetacelloNotification: Fetched -> Roassal3-Interaction-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2147398Z MetacelloNotification: Fetched -> Roassal3-Layouts-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2169196Z MetacelloNotification: Fetched -> Roassal3-Chart-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2189876Z MetacelloNotification: Fetched -> Roassal3-UML-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2211815Z MetacelloNotification: Fetched -> Roassal3-Spec-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.2233699Z MetacelloNotification: Fetched -> Roassal3-Inspector-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.3305122Z MetacelloNotification: Fetched -> Roassal3-Mondrian-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.6838145Z MetacelloNotification: Fetched -> Roassal3-Experimental-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.7238842Z MetacelloNotification: Fetched -> Roassal3-SVG-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:13.7318642Z MetacelloNotification: Fetched -> Roassal3-SVG-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:14.0868023Z MetacelloNotification: Fetched -> Roassal3-SVG-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- https://github.com/ObjectProfile/Roassal3.git[master]
+2022-09-12T19:15:14.0908766Z MetacelloNotification: Loading -> Athens-SVG-PathConverter-CompatibleUserName.1648286018 --- https://github.com/pharo-contributions/Athens-SVG.git[master] --- https://github.com/pharo-contributions/Athens-SVG.git[master]
+2022-09-12T19:15:14.4977741Z MetacelloNotification: Loaded -> Athens-SVG-PathConverter-CompatibleUserName.1648286018 --- https://github.com/pharo-contributions/Athens-SVG.git[master] --- https://github.com/pharo-contributions/Athens-SVG.git[master]
+2022-09-12T19:15:14.5006434Z MetacelloNotification: Loading -> Geometry-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- cache
+2022-09-12T19:15:14.9126097Z MetacelloNotification: Loaded -> Geometry-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- cache
+2022-09-12T19:15:14.9131357Z MetacelloNotification: Loading -> Geometry-Tests-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- cache
+2022-09-12T19:15:15.2381727Z MetacelloNotification: Loaded -> Geometry-Tests-CompatibleUserName.1619186976 --- https://github.com/pharo-contributions/Geometry.git[master] --- cache
+2022-09-12T19:15:15.2386998Z MetacelloNotification: Loading -> Roassal3-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:15.8461632Z MetacelloNotification: Loaded -> Roassal3-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:15.8466896Z MetacelloNotification: Loading -> Roassal3-Event-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:16.0023959Z MetacelloNotification: Loaded -> Roassal3-Event-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:16.0030304Z MetacelloNotification: Loading -> Roassal3-Builders-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:16.1952477Z MetacelloNotification: Loaded -> Roassal3-Builders-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:16.1956156Z MetacelloNotification: Loading -> Roassal3-Shapes-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:17.4492228Z MetacelloNotification: Loaded -> Roassal3-Shapes-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:17.4502937Z MetacelloNotification: Loading -> Roassal3-Animation-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:17.7467660Z MetacelloNotification: Loaded -> Roassal3-Animation-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:17.7474381Z MetacelloNotification: Loading -> Roassal3-Interaction-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:18.3837924Z MetacelloNotification: Loaded -> Roassal3-Interaction-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:18.3842903Z MetacelloNotification: Loading -> Roassal3-Layouts-Util-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:18.5106331Z MetacelloNotification: Loaded -> Roassal3-Layouts-Util-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:18.5110012Z MetacelloNotification: Loading -> Roassal3-Layouts-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:19.7455084Z MetacelloNotification: Loaded -> Roassal3-Layouts-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:19.7481888Z MetacelloNotification: Loading -> Roassal3-Colors-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.1654446Z MetacelloNotification: Loaded -> Roassal3-Colors-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.1659962Z MetacelloNotification: Loading -> Roassal3-Legend-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.2575815Z MetacelloNotification: Loaded -> Roassal3-Legend-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.2582424Z MetacelloNotification: Loading -> Roassal3-UML-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.7603934Z MetacelloNotification: Loaded -> Roassal3-UML-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.7608360Z MetacelloNotification: Loading -> Roassal3-Sunburst-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.9020114Z MetacelloNotification: Loaded -> Roassal3-Sunburst-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.9025504Z MetacelloNotification: Loading -> Roassal3-FlameGraph-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.9722386Z MetacelloNotification: Loaded -> Roassal3-FlameGraph-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:20.9725598Z MetacelloNotification: Loading -> Roassal3-Pie-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:21.0843051Z MetacelloNotification: Loaded -> Roassal3-Pie-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:21.0847208Z MetacelloNotification: Loading -> Roassal3-Inspector-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:21.3947615Z MetacelloNotification: Loaded -> Roassal3-Inspector-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:21.3956650Z MetacelloNotification: Loading -> Roassal3-Chart-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.0935127Z MetacelloNotification: Loaded -> Roassal3-Chart-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.0940752Z MetacelloNotification: Loading -> Roassal3-DSM-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.2182815Z MetacelloNotification: Loaded -> Roassal3-DSM-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.2187043Z MetacelloNotification: Loading -> Roassal3-Menu-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.4765762Z MetacelloNotification: Loaded -> Roassal3-Menu-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.4778922Z MetacelloNotification: Loading -> Roassal3-Spec-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.5601141Z MetacelloNotification: Loaded -> Roassal3-Spec-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.5620970Z MetacelloNotification: Loading -> Roassal3-Spec-Morphic-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.6362965Z MetacelloNotification: Loaded -> Roassal3-Spec-Morphic-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.6372481Z MetacelloNotification: Loading -> Roassal3-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:22.8945880Z NewUndeclaredWarning: RSAnimationExamples>>example44A (RSSVGPath is Undeclared)
+2022-09-12T19:15:22.8947565Z NewUndeclaredWarning: RSAnimationExamples>>example44A (RSBlockSegmentsVisitor is Undeclared)
+2022-09-12T19:15:23.4983986Z MetacelloNotification: Loaded -> Roassal3-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:23.4997724Z MetacelloNotification: Loading -> Roassal3-Legend-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:23.5996511Z MetacelloNotification: Loaded -> Roassal3-Legend-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:23.6010288Z MetacelloNotification: Loading -> Roassal3-Chart-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:23.6578738Z NewUndeclaredWarning: RSChartExample>>example21Popup (RSAreaPlot is Undeclared)
+2022-09-12T19:15:23.6601280Z NewUndeclaredWarning: RSChartExample>>example22CustomPopup (RSAreaPlot is Undeclared)
+2022-09-12T19:15:23.7868581Z MetacelloNotification: Loaded -> Roassal3-Chart-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:23.7883819Z MetacelloNotification: Loading -> Roassal3-Pie-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:23.9404714Z MetacelloNotification: Loaded -> Roassal3-Pie-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:23.9413225Z MetacelloNotification: Loading -> Roassal3-Sunburst-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.0364858Z MetacelloNotification: Loaded -> Roassal3-Sunburst-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.0373374Z MetacelloNotification: Loading -> Roassal3-FlameGraph-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.1140366Z MetacelloNotification: Loaded -> Roassal3-FlameGraph-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.1148438Z MetacelloNotification: Loading -> Roassal3-UML-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.2103605Z MetacelloNotification: Loaded -> Roassal3-UML-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.2117316Z MetacelloNotification: Loading -> Roassal3-Spec-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.5976520Z MetacelloNotification: Loaded -> Roassal3-Spec-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.6002121Z MetacelloNotification: Loading -> Roassal3-Global-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.7804858Z MetacelloNotification: Loaded -> Roassal3-Global-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.7811363Z MetacelloNotification: Loading -> Roassal3-Animation-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.8774288Z MetacelloNotification: Loaded -> Roassal3-Animation-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:24.8779520Z MetacelloNotification: Loading -> Roassal3-Shapes-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.0958893Z MetacelloNotification: Loaded -> Roassal3-Shapes-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.0960997Z MetacelloNotification: Loading -> Roassal3-Interaction-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.2142608Z MetacelloNotification: Loaded -> Roassal3-Interaction-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.2149103Z MetacelloNotification: Loading -> Roassal3-Layouts-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.3254796Z MetacelloNotification: Loaded -> Roassal3-Layouts-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.3261321Z MetacelloNotification: Loading -> Roassal3-Chart-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.4626555Z MetacelloNotification: Loaded -> Roassal3-Chart-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.4628583Z MetacelloNotification: Loading -> Roassal3-UML-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.5176169Z MetacelloNotification: Loaded -> Roassal3-UML-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.5182586Z MetacelloNotification: Loading -> Roassal3-Spec-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.5763407Z MetacelloNotification: Loaded -> Roassal3-Spec-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.5770028Z MetacelloNotification: Loading -> Roassal3-Inspector-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.6423201Z MetacelloNotification: Loaded -> Roassal3-Inspector-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:25.6430944Z MetacelloNotification: Loading -> Roassal3-Mondrian-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:26.0214382Z MetacelloNotification: Loaded -> Roassal3-Mondrian-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:26.0227799Z MetacelloNotification: Loading -> Roassal3-Experimental-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:26.2076920Z NewUndeclaredWarning: RSDelaunayExample>>girlFrom: (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.2295270Z NewUndeclaredWarning: RSAcrossPathBuilder>>example01Labels (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.2303811Z NewUndeclaredWarning: RSAcrossPathBuilder>>example02Labels (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.2311715Z NewUndeclaredWarning: RSAcrossPathBuilder>>example03Labels (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.2319091Z NewUndeclaredWarning: RSAcrossPathBuilder>>example04Labels (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.2337162Z NewUndeclaredWarning: RSAcrossPathBuilder>>renderIn: (RSBlockSegmentsVisitor is Undeclared)
+2022-09-12T19:15:26.2371182Z NewUndeclaredWarning: RSAlpharo>>jar (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3991714Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3992614Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3993187Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3993784Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3994343Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3994918Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3995487Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3996082Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3996652Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:26.3997220Z NewUndeclaredWarning: RSXmasExample>>icon (RSSVGPath is Undeclared)
+2022-09-12T19:15:27.0418225Z MetacelloNotification: Loaded -> Roassal3-Experimental-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:27.0435235Z MetacelloNotification: Loading -> Roassal3-SVG-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:27.4010755Z MetacelloNotification: Loaded -> Roassal3-SVG-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:27.4026490Z MetacelloNotification: Loading -> Roassal3-SVG-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:27.4721335Z MetacelloNotification: Loaded -> Roassal3-SVG-Tests-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:27.4731639Z MetacelloNotification: Loading -> Roassal3-SVG-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:27.7268002Z MetacelloNotification: Loaded -> Roassal3-SVG-Examples-CompatibleUserName.1662997646 --- https://github.com/ObjectProfile/Roassal3.git[master] --- cache
+2022-09-12T19:15:27.7269787Z MetacelloNotification: ...finished baseline
+2022-09-12T19:16:14.2176393Z 
+2022-09-12T19:16:14.2176916Z NUMBER OF UNIT TESTS=74
+2022-09-12T19:16:14.2177368Z NUMBER OF PASSED TEST METHODS=865
+2022-09-12T19:16:14.2177733Z NUMBER OF TEST METHODS=533
+2022-09-12T19:16:14.2178071Z END
+2022-09-12T19:16:14.2192867Z ALL TEST PASSED
+2022-09-12T19:16:14.2253608Z Post job cleanup.
+2022-09-12T19:16:14.3644662Z [command]/usr/bin/git version
+2022-09-12T19:16:14.3694435Z git version 2.37.3
+2022-09-12T19:16:14.3736218Z Temporarily overriding HOME='/home/runner/work/_temp/ed95d61b-7310-4660-90ee-8f6e0450e3a2' before making global git config changes
+2022-09-12T19:16:14.3737096Z Adding repository directory to the temporary git global config as a safe directory
+2022-09-12T19:16:14.3743981Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Roassal3-1-TMP/Roassal3-1-TMP
+2022-09-12T19:16:14.3790425Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-09-12T19:16:14.3830722Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-09-12T19:16:14.4147815Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-09-12T19:16:14.4185572Z http.https://github.com/.extraheader
+2022-09-12T19:16:14.4198242Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-09-12T19:16:14.4246404Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-09-12T19:16:14.4800183Z Cleaning up orphan processes

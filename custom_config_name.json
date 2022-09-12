@@ -33,24 +33,5 @@
       "text_color": "green",
       "background_color": "white"
     }
-  },
-  "additional_fonts": {
-    "google_fonts": [
-      {
-        "name": "Anton",
-        "google_font_url": "https://fonts.googleapis.com/css?family=Anton"
-      },
-      {
-        "name": "Acme",
-        "google_font_url": "https://fonts.googleapis.com/css?family=Acme"
-      }
-    ],
-    "truetype_fonts": [
-      {
-        "name": "NotoSans",
-        "truetype_file": "./fonts/NotoSans-Regular.ttf"
-      }
-    ]
-  },
-  "font-family": "Acme, Anton, NotoSans, Sans, Cursive"
+  }
 }

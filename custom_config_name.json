@@ -2,6 +2,8 @@
   "scale": 2,
   "vertical_spacing": 1,
   "width": 140,
+  "microprint_width": 140,
+  "number_of_columns": 4,
 
   "default_colors": {
     "background_color": "rgb(30, 30, 30)",
